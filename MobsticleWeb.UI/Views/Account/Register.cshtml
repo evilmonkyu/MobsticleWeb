@@ -1,0 +1,14 @@
+﻿@{
+  ViewBag.Title = "Register";
+}
+<h2>Register</h2>
+<h3>Please register for the site with your details in the form below</h3>
+
+@using (Html.BeginForm())
+{
+  @Html.AntiForgeryToken()
+  if (ViewBag.ErrorMessage != null)
+  {
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+  }  
+}

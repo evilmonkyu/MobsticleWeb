@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Backend", "3. Backend", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Test", "4. Test", "{CABCF1C0-DB77-4DAF-BF79-A36E3DBE652F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobsticleWeb.UI.Tests", "MobsticleWeb.UI.Tests\MobsticleWeb.UI.Tests.csproj", "{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{19F41117-1C30-4A4E-BA58-4BD265462CAA} = {B55ACAA5-CBE7-42EE-A09F-13897575B943}
 		{AC479DE8-350D-45B3-9F27-15412EBBEC15} = {541F16BF-BE31-46DB-9A63-94CDD45A46F2}
 		{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9} = {7CA1A438-5DD5-4003-9598-004F275AD7E2}
+		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E} = {7CA1A438-5DD5-4003-9598-004F275AD7E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C6AD84E-742A-4047-AA80-C5EADCC95C80}
