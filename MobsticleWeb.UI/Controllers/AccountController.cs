@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using MobsticleWeb.Constants;
+using MobsticleWeb.Models.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,35 @@ namespace MobsticleWeb.Controllers
         public ViewResult Register()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Register(RegistrationModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.ErrorMessages = ModelState.SelectMany(x => x.Value.Errors.Select(y => y.ErrorMessage));
+                return View(model);
+            }
+
+            var user = new IdentityUser(model.Username);
+            try
+            {
+                var result = await _userManager.CreateAsync(user, model.Password);
+
+                if (!result.Succeeded)
+                {
+                    ViewBag.ErrorMessages = result.Errors;
+                    return View(model);
+                }
+            }
+            catch (Exception)
+            {
+                ViewBag.ErrorMessages = new[] { ErrorMessages.GenericRegistrationError };
+                return View(model);
+            }
+
+            return Redirect("/RegistrationSuccessful");
         }
     }
 }

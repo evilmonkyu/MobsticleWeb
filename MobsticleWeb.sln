@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Test", "4. Test", "{CABC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobsticleWeb.UI.Tests", "MobsticleWeb.UI.Tests\MobsticleWeb.UI.Tests.csproj", "{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobsticleWeb.Logic.Tests", "MobsticleWeb.Logic.Tests\MobsticleWeb.Logic.Tests.csproj", "{37D7F203-32A1-464A-84FE-2CB06A2D9060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D7F203-32A1-464A-84FE-2CB06A2D9060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D7F203-32A1-464A-84FE-2CB06A2D9060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D7F203-32A1-464A-84FE-2CB06A2D9060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D7F203-32A1-464A-84FE-2CB06A2D9060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{AC479DE8-350D-45B3-9F27-15412EBBEC15} = {541F16BF-BE31-46DB-9A63-94CDD45A46F2}
 		{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9} = {7CA1A438-5DD5-4003-9598-004F275AD7E2}
 		{82AD36CB-5ED2-4E11-9C8F-6E4896CE384E} = {7CA1A438-5DD5-4003-9598-004F275AD7E2}
+		{37D7F203-32A1-464A-84FE-2CB06A2D9060} = {541F16BF-BE31-46DB-9A63-94CDD45A46F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C6AD84E-742A-4047-AA80-C5EADCC95C80}
