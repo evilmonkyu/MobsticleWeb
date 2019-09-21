@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginLogicTests.cs" />
     <Compile Include="RegistrationLogicTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,6 +82,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MobsticleWeb.Domain\MobsticleWeb.Domain.csproj">
+      <Project>{AC479DE8-350D-45B3-9F27-15412EBBEC15}</Project>
+      <Name>MobsticleWeb.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MobsticleWeb.Logic\MobsticleWeb.Logic.csproj">
       <Project>{a2d33c48-2cb1-4dcb-8e2a-47e430acd72a}</Project>
       <Name>MobsticleWeb.Logic</Name>

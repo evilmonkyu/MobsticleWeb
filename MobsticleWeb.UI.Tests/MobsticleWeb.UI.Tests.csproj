@@ -102,6 +102,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MobsticleWeb.Domain\MobsticleWeb.Domain.csproj">
+      <Project>{AC479DE8-350D-45B3-9F27-15412EBBEC15}</Project>
+      <Name>MobsticleWeb.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobsticleWeb.Logic\MobsticleWeb.Logic.csproj">
+      <Project>{A2D33C48-2CB1-4DCB-8E2A-47E430ACD72A}</Project>
+      <Name>MobsticleWeb.Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MobsticleWeb.UI\MobsticleWeb.UI.csproj">
       <Project>{D2A6FFEA-9F9F-4E08-B809-279A32DF64A9}</Project>
       <Name>MobsticleWeb.UI</Name>

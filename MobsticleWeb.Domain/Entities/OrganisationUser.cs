@@ -8,6 +8,8 @@ namespace MobsticleWeb.Domain.Entities
 {
     public class OrganisationUser
     {
+        public long Id { get; set; }
+
         public User User { get; set; }
     }
 }

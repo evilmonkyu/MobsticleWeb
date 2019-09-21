@@ -9,6 +9,8 @@ namespace MobsticleWeb.Domain.Entities
 {
     public class Pause : IMobPeriod
     {
+        public long Id { get; set; }
+
         public DateTime Start { get; set; }
 
         public DateTime End { get; set; }

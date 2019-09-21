@@ -1,0 +1,44 @@
+﻿@model MobsticleWeb.Models.Mobs.IndexModel
+@{
+  ViewBag.Title = "My Mobs";
+}
+
+<h2>My Mobs</h2>
+<p>All of the mobs which you are a member of will appear below.</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Members</td>
+    </tr>
+  </thead>
+  @foreach (var mob in Model.Mobs)
+  {
+      <tr>
+        <td>
+          @mob.Name
+        </td>
+        <td>
+          @mob.Users.Count
+        </td>
+      </tr>
+  }
+  <tfoot>
+    <ul class="pagination">
+      <li>
+        <a>&laquo;</a>
+      </li>
+      <li>
+        @Model.Page / @Model.PageCount
+      </li>
+      <li>
+        <a>&raquo;</a>
+      </li>
+    </ul>
+  </tfoot>
+</table>
+
+@Html.ActionLink("Create a new Mob", "New")
+
+

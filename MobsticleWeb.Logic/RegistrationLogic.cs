@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using MobsticleWeb.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,15 @@ namespace MobsticleWeb.Logic
 
         public virtual async Task<IEnumerable<string>> RegsiterUser(string username, string password)
         {
-            return null;
+            var user = new IdentityUser(username);
+            try
+            {
+                return (await _userManager.CreateAsync(user, password)).Errors;
+            }
+            catch (Exception)
+            {
+                return new[] { ErrorMessages.GenericRegistrationError };
+            }
         }
     }
 }

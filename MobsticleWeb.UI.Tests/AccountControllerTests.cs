@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MobsticleWeb.Constants;
 using MobsticleWeb.Controllers;
+using MobsticleWeb.Logic;
 using MobsticleWeb.Models.Account;
 using NSubstitute;
 
@@ -17,15 +18,17 @@ namespace MobsticleWeb.UI.Tests
     public class AccountControllerTests
     {
         private AccountController accountController;
-        private IUserStore<IdentityUser> userStore;
+        private IUserStore<IdentityUser> userStore;        
         private UserManager<IdentityUser> userManager;
+        private RegistrationLogic registrationLogic;
 
         [TestInitialize]
         public void Setup()
         {
             userStore = Substitute.For<IUserStore<IdentityUser>>();
             userManager = Substitute.For<UserManager<IdentityUser>>(userStore);
-            accountController = new AccountController(userManager);
+            registrationLogic = new RegistrationLogic(userManager);
+            accountController = new AccountController(registrationLogic, userManager);
         }
 
         [TestMethod]

@@ -145,13 +145,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="Constants\ErrorMessages.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\MobsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account\RegistrationModel.cs" />
+    <Compile Include="Models\Mobs\IndexModel.cs" />
+    <Compile Include="Models\Mobs\MobModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +194,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Mobs\Index.cshtml" />
+    <Content Include="Views\Mobs\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -208,6 +212,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobsticleWeb.Data.EF\MobsticleWeb.Data.EF.csproj">
+      <Project>{E5B7131C-136C-4531-BB33-37E98053D7F4}</Project>
+      <Name>MobsticleWeb.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobsticleWeb.Data\MobsticleWeb.Data.csproj">
+      <Project>{19F41117-1C30-4A4E-BA58-4BD265462CAA}</Project>
+      <Name>MobsticleWeb.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobsticleWeb.Domain\MobsticleWeb.Domain.csproj">
+      <Project>{AC479DE8-350D-45B3-9F27-15412EBBEC15}</Project>
+      <Name>MobsticleWeb.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobsticleWeb.Logic\MobsticleWeb.Logic.csproj">
+      <Project>{A2D33C48-2CB1-4DCB-8E2A-47E430ACD72A}</Project>
+      <Name>MobsticleWeb.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

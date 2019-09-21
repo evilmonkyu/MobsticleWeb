@@ -9,6 +9,8 @@ namespace MobsticleWeb.Domain.Entities
 {
     public class Turn : IMobPeriod
     {
+        public long Id { get; set; }
+
         public MobUser Participant;
 
         public List<Pause> Pauses { get; set; }

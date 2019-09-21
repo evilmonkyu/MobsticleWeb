@@ -9,6 +9,8 @@ namespace MobsticleWeb.Domain.Entities
 {
     public class Session : IMobPeriod
     {
+        public long Id { get; set; }
+
         public List<Turn> Turns { get; set; }
 
         public DateTime Start { get; set; }
